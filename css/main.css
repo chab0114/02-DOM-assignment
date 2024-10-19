@@ -1,0 +1,56 @@
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #e5e5e5;
+  color: #333333;
+  padding: 1.25rem;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  color: #00BFFF;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 1.25rem;
+}
+
+.character {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+  border: 0.125rem solid #36BF7F;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.character h2 {
+  margin-top: 0;
+  color: #00FF00;
+}
+
+.character p {
+  margin: 0.5rem 0;
+  color: #555555;
+}
+
+.details {
+  display: none;
+}
+
+.character.active {
+  background-color: #f0f0f0;
+  border-color: #DC143C;
+}
+
+.name {
+  cursor: pointer;
+  color: #00FF00;
+}
+
+.name:hover {
+  color: #FFD700;
+}
